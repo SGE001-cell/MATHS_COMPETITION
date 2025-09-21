@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SGE Maths Challenge - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Topbar -->
+  <header class="dashboard-header">
+    <h1>SGE Maths Challenge</h1>
+    <div class="switch-btn" id="logoutBtn">⏻ Logout</div>
+    <div class="menu-toggle" id="menuToggle">☰</div>
+  </header>
+
+  <!-- Sidebar -->
+  <nav class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="#" data-page="home">Home</a></li>
+      <li><a href="#" data-page="profile">Profile</a></li>
+      <li><a href="#" data-page="about">About SGE Maths Challenge</a></li>
+      <li><a href="#" data-page="tutorials">Tutorial Classes</a></li>
+      <li><a href="#" data-page="exam">Exam Hall</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="dashboardContent">
+    <!-- Default homepage -->
+    <section id="home" class="page active">
+      <h2>Welcome to SGE Maths Challenge</h2>
+      <p>Prepare yourself for Nigeria’s most exciting online mathematics competition! Compete, learn, and win big.</p>
+      <h3>🏆 Prizes</h3>
+      <ul>
+        <li>🥇 1st Place – ₦50,000</li>
+        <li>🥈 2nd Place – ₦30,000</li>
+        <li>🥉 3rd Place – ₦20,000</li>
+      </ul>
+    </section>
+
+    <section id="profile" class="page">
+      <h2>Your Profile</h2>
+      <div class="profile-pic">👤</div>
+      <p><strong>Name:</strong> <span id="profileName"></span></p>
+      <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+      <p><strong>School:</strong> <span id="profileSchool"></span></p>
+      <p><strong>State:</strong> <span id="profileState"></span></p>
+      <p><strong>LGA:</strong> <span id="profileLga"></span></p>
+      <p><strong>Category:</strong> <span id="profileCategory"></span></p>
+      <button id="editProfileBtn">Edit Profile</button>
+    </section>
+
+    <section id="about" class="page">
+      <h2>About SGE Maths Challenge</h2>
+      <p>
+        The SGE Maths Challenge is an online mathematics talent search created to inspire, challenge, and nurture the next generation of problem solvers across Nigeria. Unlike many competitions that focus only on speed or memorization, this challenge is built to test deep understanding, logical reasoning, creativity, and application of mathematics to real-life problems.
+      </p>
+      <p>
+        The competition is designed in multiple stages, allowing students to demonstrate their skills step by step. With carefully structured rounds, we aim to not only recognize raw talent but also encourage growth, consistency, and resilience among participants. The first round is aimed at opening the door for as many students as possible, while subsequent rounds gradually become more competitive, filtering out the very best minds.
+      </p>
+      <p>
+        One of the core reasons behind SGE Maths Challenge is to bridge the gap between classroom learning and problem-solving in the real world. Too often, students view mathematics as a subject that exists only within their textbooks. Through this competition, we want to demonstrate how math can shape thinking, strengthen logical decision-making, and even prepare students for future careers in technology, engineering, economics, and beyond.
+      </p>
+      <p>
+        Another reason for starting this initiative is inclusivity. The competition is hosted entirely online, giving students from different states, towns, and schools equal opportunity to participate regardless of their background. Whether you are in a city or a remote village, all you need is a device with internet access to join this movement of future innovators.
+      </p>
+      <p>
+        Beyond the competition itself, SGE Maths Challenge is building a community. Through tutorials, study groups, and mentorship opportunities, students will not only compete but also learn, share, and grow together. Mathematics is not about isolation; it thrives in collaboration, discussion, and collective progress.
+      </p>
+      <p>
+        The prizes—₦50,000 for the winner, ₦30,000 for second place, and ₦20,000 for third—are not just financial rewards. They represent recognition of effort, talent, and the courage to challenge oneself. However, the real prize is the knowledge gained, the friendships built, and the self-confidence developed through this journey.
+      </p>
+      <p>
+        At SGE, we believe every student has potential. Our mission is to create a platform where that potential is discovered, sharpened, and celebrated. This is not just a competition—it is a movement to raise the standard of mathematics in Nigeria and to inspire young people to think differently, solve boldly, and lead confidently.
+      </p>
+    </section>
+
+    <section id="tutorials" class="page">
+      <h2>Tutorial Classes</h2>
+      <p>Coming Soon 🚀</p>
+    </section>
+
+    <section id="exam" class="page">
+      <h2>Exam Hall</h2>
+      <p>Before starting your exam, please carefully read the rules:</p>
+      <ul>
+        <li>You must have a stable internet connection.</li>
+        <li>Do not refresh or close the page during the exam.</li>
+        <li>Leaving the exam tab will auto-submit your test.</li>
+        <li>No copying, screenshots, or right-clicking allowed.</li>
+        <li>Your camera and microphone may be monitored during the exam.</li>
+      </ul>
+      <label>
+        <input type="checkbox" id="agreeRules"> I agree to follow all rules.
+      </label>
+      <br>
+      <button id="startExamBtn" disabled>Proceed to Exam</button>
+    </section>
+  </main>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

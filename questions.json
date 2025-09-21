@@ -1,0 +1,74 @@
+{
+  "upper_primary": {
+    "round1": [
+      {
+        "id": 1,
+        "text": "What is 25 + 47?",
+        "options": ["65", "72", "71", "73"],
+        "answer": "72"
+      },
+      {
+        "id": 2,
+        "text": "Simplify: 12 ÷ 3",
+        "options": ["2", "3", "4", "6"],
+        "answer": "4"
+      }
+    ],
+    "round2": [
+      {
+        "id": 1,
+        "text": "If a box has 36 apples shared equally among 6 children, how many apples per child?",
+        "options": ["5", "6", "7", "8"],
+        "answer": "6"
+      }
+    ]
+  },
+  "junior_secondary": {
+    "round1": [
+      {
+        "id": 1,
+        "text": "If 2x + 3 = 11, find x.",
+        "options": ["3", "4", "5", "6"],
+        "answer": "4"
+      },
+      {
+        "id": 2,
+        "text": "Simplify: 5(2 + 3) - 4",
+        "options": ["21", "25", "30", "18"],
+        "answer": "21"
+      }
+    ],
+    "round2": [
+      {
+        "id": 1,
+        "text": "The LCM of 12 and 18 is?",
+        "options": ["24", "36", "48", "54"],
+        "answer": "36"
+      }
+    ]
+  },
+  "senior_secondary": {
+    "round1": [
+      {
+        "id": 1,
+        "text": "If f(x) = 2x² + 3x, find f(2).",
+        "options": ["10", "12", "14", "16"],
+        "answer": "14"
+      },
+      {
+        "id": 2,
+        "text": "Solve: log₂(8).",
+        "options": ["2", "3", "4", "8"],
+        "answer": "3"
+      }
+    ],
+    "round2": [
+      {
+        "id": 1,
+        "text": "Differentiate y = 3x² + 2x with respect to x.",
+        "options": ["6x + 2", "3x + 2", "6x² + 2", "None"],
+        "answer": "6x + 2"
+      }
+    ]
+  }
+}

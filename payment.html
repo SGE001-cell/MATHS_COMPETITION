@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proceed to Payment - SGE Maths Challenge</title>
+</head>
+<body>
+  <h2>Proceed to Payment</h2>
+  <p>Please click the button below to pay securely via Paystack.</p>
+
+  <button id="payBtn">Pay with Paystack</button>
+
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+  <script>
+    document.getElementById("payBtn").addEventListener("click", function(){
+      var handler = PaystackPop.setup({
+        key: "pk_test_xxxxxxxxxxxxx", // 🔹 Your Paystack PUBLIC KEY here
+        email: "studentemail@example.com", // you’ll pass student’s email dynamically
+        amount: 3000 * 100, // amount in kobo (₦3000)
+        currency: "NGN",
+        ref: "SGE"+Math.floor((Math.random() * 1000000000) + 1), 
+        callback: function(response){
+          alert("Payment successful. Reference: " + response.reference);
+          window.location.href = "success.html"; // redirect after success
+        },
+        onClose: function(){
+          alert("Transaction was not completed, window closed.");
+        }
+      });
+      handler.openIframe();
+    });
+  </script>
+</body>
+</html>

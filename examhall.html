@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SGE Maths Challenge - Exam Hall</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Rules Page -->
+  <div id="rulesPage">
+    <h2>Exam Hall Rules</h2>
+    <ul>
+      <li>No switching tabs or leaving this page. Once you leave, the exam will auto-submit.</li>
+      <li>Do not refresh or close the browser.</li>
+      <li>You cannot retake this exam once submitted.</li>
+      <li>All questions are compulsory. Duration is set by the Admin.</li>
+      <li>🔴 Camera Monitoring Active</li>
+    </ul>
+    <label>
+      <input type="checkbox" id="agreeRules"> I agree to the rules
+    </label>
+    <br><br>
+    <button id="startExamBtn">Start Exam</button>
+  </div>
+
+  <!-- Exam Interface (hidden until start) -->
+  <div id="examInterface" style="display: none;">
+    <header>
+      <h2>SGE Maths Challenge - Exam</h2>
+      <div id="timer">Time: 00:00</div>
+    </header>
+
+    <main>
+      <!-- Left Panel: Question Numbers -->
+      <aside id="questionNav">
+        <h3>Questions</h3>
+        <div id="questionNumbers"></div>
+      </aside>
+
+      <!-- Center Panel: Question Display -->
+      <section id="questionArea">
+        <div id="questionText"></div>
+        <div id="options"></div>
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+      </section>
+    </main>
+
+    <!-- Submit Button -->
+    <footer>
+      <button id="submitBtn">Submit Exam</button>
+    </footer>
+  </div>
+
+  <script src="exam.js"></script>
+</body>
+</html>
