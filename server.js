@@ -16,6 +16,11 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static("public"));
 
+// ------------------- ROOT ROUTE (NEW) -------------------
+app.get("/", (req, res) => {
+  res.send("🚀 Welcome to the SGE Maths Challenge API! Server is running.");
+});
+
 // Simple JSON-based "database"
 const USERS_FILE = path.join(__dirname, "users.json");
 const QUESTIONS_FILE = path.join(__dirname, "questions.json");
